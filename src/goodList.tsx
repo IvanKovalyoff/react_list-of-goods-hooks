@@ -5,7 +5,7 @@ interface GoodsListProps {
   goods: Good[];
 }
 
-export const Goodlist: React.FC<GoodsListProps> = ({ goods }) => (
+export const RenderGoodlist: React.FC<GoodsListProps> = ({ goods }) => (
   <ul>
     {goods.map(good => (
       <li key={good.id} data-cy="Good">

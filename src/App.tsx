@@ -3,7 +3,7 @@ import 'bulma/css/bulma.css';
 import './App.scss';
 import { SortType, Good } from './types';
 import { GoodsButtons } from './GoodsButtons';
-import { Goodlist } from './GoodList';
+import { RenderGoodlist } from './GoodList';
 
 export const goodsFromServer: string[] = [
   'Dumplings',
@@ -78,7 +78,7 @@ export const App: React.FC = () => {
         onReset={handleReset}
       />
 
-      <Goodlist goods={goods} />
+      <RenderGoodlist goods={goods} />
     </div>
   );
 };
