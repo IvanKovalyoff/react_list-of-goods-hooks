@@ -10,7 +10,7 @@ interface GoodsButtonsProps {
   onReset: () => void;
 }
 
-export const GoodsButtons: React.FC<GoodsButtonsProps> = ({
+export const RenderGoodsButtons: React.FC<GoodsButtonsProps> = ({
   sortBy,
   isReversed,
   onSortAlphabetically,

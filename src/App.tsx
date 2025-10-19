@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import 'bulma/css/bulma.css';
 import './App.scss';
 import { SortType, Good } from './types';
-import { GoodsButtons } from './GoodsButtons';
-import { RenderGoodlist } from './GoodList';
+import { RenderGoodsButtons } from './goodsButtons';
+import { RenderGoodlist } from './goodList';
 
 export const goodsFromServer: string[] = [
   'Dumplings',
@@ -69,7 +69,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="section content">
-      <GoodsButtons
+      <RenderGoodsButtons
         sortBy={sortBy}
         isReversed={isReversed}
         onSortAlphabetically={handleSortAlphabetically}
